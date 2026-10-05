@@ -11,5 +11,9 @@
             ]
         }
     },
-    "terminal.integrated.defaultProfile.linux": "bash-j-goes-t"
+    "terminal.integrated.defaultProfile.linux": "bash-j-goes-t",
+
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    }
 }

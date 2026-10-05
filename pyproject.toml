@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "j-goes-t"
+version = "0.1.0"
+description = "A Python library for converting JSON to TOON and back."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [
+    { name = "Antonio Carlos Soares Cardoso" }
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
