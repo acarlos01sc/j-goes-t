@@ -1,0 +1,15 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+
+    "terminal.integrated.profiles.linux": {
+        "bash-j-goes-t": {
+            "path": "/bin/bash",
+            "args": [
+                "-c",
+                "source '${workspaceFolder}/.venv/bin/activate' && exec bash"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash-j-goes-t"
+}
