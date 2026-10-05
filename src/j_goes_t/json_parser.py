@@ -26,8 +26,10 @@ class JSONParser:
             return False
 
         return True
-    
+
     def parse(self):
         """Parse the JSON file into Python objects."""
         with open(self.source, "r", encoding="utf-8") as file:
-            return json.load(file)
+            python_tree = json.load(file)
+
+        return python_tree
