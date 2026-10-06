@@ -1,5 +1,6 @@
 ![](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
 
+
 # j-goes-t
 
 **j-goes-t** is a Python library for converting data between **JSON** and **TOON** (Token-Oriented Object Notation).
