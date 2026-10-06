@@ -2,11 +2,11 @@ from j_goes_t.json_analyser import JSONAnalyser
 from j_goes_t.json_parser import JSONParser
 from j_goes_t.toon_tree import (
     ArrayNode,
-    ObjectNode,
-    StringNode,
-    NumberNode,
     BoolNode,
     NullNode,
+    NumberNode,
+    ObjectNode,
+    StringNode,
 )
 
 
