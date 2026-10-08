@@ -1,10 +1,10 @@
 from j_goes_t.toon_tree import (
     ArrayNode,
-    ObjectNode,
-    StringNode,
-    NumberNode,
     BoolNode,
     NullNode,
+    NumberNode,
+    ObjectNode,
+    StringNode,
 )
 
 
