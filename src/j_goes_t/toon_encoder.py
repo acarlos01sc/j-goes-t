@@ -137,6 +137,9 @@ class TOONEncoder:
 
     def _encode_array(self, node: ArrayNode):
         """Encode an array node."""
+        if not node.elements:
+            return "[]"
+
         if self._has_uniform_structure(node):
             return "\n".join(self._encode_tabular_array("", node))
 
@@ -152,6 +155,10 @@ class TOONEncoder:
         for element in node.elements:
             encoded = self._encode_node(element)
             element_lines = encoded.splitlines()
+
+            if not element_lines:
+                lines.append("  -")
+                continue
 
             lines.append(f"  - {element_lines[0]}")
             lines.extend(f"    {line}" for line in element_lines[1:])
